@@ -12,6 +12,30 @@ Typography is the way that text
   font-family:'Roboto', sans-serif ;
  }
 
+ ol {
+  list-style-type: lower-alpha;
+  padding: 0;
+ }
+
+ ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  text-align: center;
+  color:blue;
+  line-height: 1.6;
+ }
+
+ ul li:nth-child(even) {
+  color:red;
+ }
+
+ ul ::marker {
+  color:red;
+  font-family: fantasy;
+  font-size: 1em;
+  content: "only $5 >>";
+ }
+
 /*  input, button {
   font: inherit;
  } */
